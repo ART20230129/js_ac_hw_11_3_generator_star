@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Домашнее задание к лекции Генераторы</h1> 
+<!--   <script>
+
+
+/* function canIterate(obj){
+  try {
+    return !!obj[Symbol.iterator]
+
+  } catch (err) {
+    return false;
+  }
+} */
+
+function canIterate(object) {
+  try {
+    if (object[Symbol.iterator]) {
+      return true;
+    } else {
+    return false;
+    }
+  } catch (err) {
+    return false;
+  }
+}
+
+
+console.log(canIterate(new Map())); // true
+console.log(canIterate(new Set())); // true
+console.log(canIterate(null));      // false
+console.log(canIterate(10));          // false
+console.log(canIterate("Netology"));  // true
+
+
+  </script> -->
+</body>
+</html>
